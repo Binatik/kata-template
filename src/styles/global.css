@@ -90,6 +90,84 @@ body {
 }
 
 .page__container {
+	padding: 120px 80px;
+}
+
+.title {
+	letter-spacing: -1px;
+	font-weight: 400;
+}
+
+.title__primary {
+	color: var(--color-text-primary);
+}
+
+.title__primary_md {
+	font-size: clamp(2rem, 2.8vw, 2.4rem);
+}
+
+.registration-top__title {
+	margin-bottom: 10px;
+}
+
+.description {
+	font-weight: 500;
+} 
+
+.description__primary {
+  color: var(--color-white-600);
+}
+
+.description__primary_md {
+	font-size: clamp(1rem, 2.8vw, 1.3rem);
+}
+
+.registration-top__description {
+	margin-bottom: 60px;
+}
+
+.registration-top__row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.button {
+	transition: 0.2s background;
+}
+
+.button__primary {
+	color: var(--color-white);
+	background-color: var(--color-button-primary);
+}
+
+.button__secondory {
+	color: var(--color-white);
+	background-color: var(--color-button-secondory);
+}
+
+.button__primary_md {
+	padding: 10px 20px;
+}
+
+.registration-top__button-col_2 {
+	display: inline-flex;
+	align-items: center;
+	flex: 1 1 calc(50% - 20px)
+}
+
+.registration-top__button-action {
+	flex-shrink: 0;
+	margin-right: 30px;
+	width: 30px;
+	height: auto;
+	fill: var(--color-white);
+}
+
+.line {
+	width: 100%;
+	border-bottom: 1px solid var(--color-white-600);
 }
 
 .footer {
@@ -102,9 +180,56 @@ body {
 	margin: 0 auto;
 }
 
+.separator {
+	position: relative;
+	text-align: center;
+	font-weight: 600;
+
+}
+
+.separator::before {
+	position: absolute;
+	content: "";
+	width: 100px;
+	top: 7px;
+	left: 210px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.separator::after {
+	position: absolute;
+	content: "";
+	width: 100px;
+	top: 7px;
+	right:210px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+
 
 @media (hover: hover) {
 	.header__logo:hover .logo__col_2 .logo__primary > span:first-child {
 		color: var(--color-text-primary);
+	}
+
+	.button__primary:hover {
+		background-color: var(--color-active-primary);
+	}
+
+	.button__secondory:hover {
+		background-color: var(--color-active-primary);
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.registration-top__button-col_2 {
+		flex: 1 1 100%
+	}
+}
+
+@media (max-width: 768px) {
+	.body__col_2 {
+		flex: 1 1 100%;
 	}
 }
