@@ -1,5 +1,4 @@
 :root {
-	--color-bg-primary: #ffffff;
 	--color-text-primary: #2A4A5C;
 	--color-button-primary: #255A9B;
 	--color-button-secondory: #0076B6;
@@ -19,7 +18,7 @@
 *:after {
 	font-weight: 300;
 	font-family: 'Barlow', sans-serif;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 
 html,
@@ -33,141 +32,82 @@ body {
 	min-height: 100%;
 }
 
-.body__row {
-	display: flex;
-	flex-wrap: wrap;
+.body-row {
+  display: flex;
 }
 
-.design {
-	min-height: 100vh;
-	background: url('../assets/bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+.body-col_2 {
+  flex: 1 1 50%
 }
 
-.design__container {
-	padding: 30px 38px;
+.header {
+	background-color: transparent;
 }
 
-.body__col_2 {
-	flex: 1 1 50%;
-}
-
-.header__top {
-	display: flex;
+.link-logo {
+	display: inline-flex;
+	gap: 15px;
 	align-items: center;
 }
 
-.header__logo {
-	display: flex;
-	align-items: center;
-}
-
-.logo__col_2 {
-	margin-right: 15px;
-}
-
-.logo__primary {
+.title-secondory {
 	color: var(--color-white);
 }
 
-.logo__primary_md {
-	font-size: clamp(2.5rem, 2.8vw, 3.2rem);
-}
-
-.logo__primary > span {
+.title-secondory_size_md {
+	letter-spacing: -4px;
 	font-weight: 400;
-	letter-spacing: -2px;
-	transition: 0.2s color;
+	font-size: clamp(2.4rem, 5vw, 3.2rem);
 }
 
-.logo__primary > span:last-child {
+.title-secondory_size_md:last-child {
 	letter-spacing: -8px;
+}
+
+.title-secondory_hover {
+	transition: 0.2s color;
 }
 
 .page {
 	flex: 1 0 auto;
 }
 
-.page__container {
-	padding: 120px 80px;
-}
-
-.title {
-	letter-spacing: -1px;
-	font-weight: 400;
-}
-
-.title__primary {
+.title-primary {
 	color: var(--color-text-primary);
 }
 
-.title__primary_md {
+.title-primary_size_extra {
+	font-weight: 500;
 	font-size: clamp(2rem, 2.8vw, 2.4rem);
 }
 
-.registration-top__title {
-	margin-bottom: 10px;
+.description-primary {
+	color: var(--color-white-600);
 }
 
-.description {
-	font-weight: 500;
-} 
-
-.description__primary {
-  color: var(--color-white-600);
-}
-
-.description__primary_md {
+.description-primary_size_md {
+	font-weight: 400;
 	font-size: clamp(1rem, 2.8vw, 1.3rem);
 }
 
-.registration-top__description {
-	margin-bottom: 60px;
-}
-
-.registration-top__row {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 20px;
-}
-
-.button {
-	transition: 0.2s background;
-}
-
-.button__primary {
+.button-primary {
 	color: var(--color-white);
 	background-color: var(--color-button-primary);
+	transition: 0.2s background, 0.2s color;
 }
 
-.button__secondory {
-	color: var(--color-white);
+.button-primary_size_md {
+	padding: 10px;
+}
+
+.button-secondory {
 	background-color: var(--color-button-secondory);
 }
 
-.button__primary_md {
-	padding: 10px 20px;
-}
-
-.registration-top__button-col_2 {
-	display: inline-flex;
+.button-primary_row {
+	display: flex;
 	align-items: center;
-	flex: 1 1 calc(50% - 20px)
-}
-
-.registration-top__button-action {
-	flex-shrink: 0;
-	margin-right: 30px;
-	width: 30px;
-	height: auto;
-	fill: var(--color-white);
-}
-
-.line {
-	width: 100%;
-	border-bottom: 1px solid var(--color-white-600);
+	gap: 10px;
 }
 
 .footer {
@@ -180,56 +120,14 @@ body {
 	margin: 0 auto;
 }
 
-.separator {
-	position: relative;
-	text-align: center;
-	font-weight: 600;
-
-}
-
-.separator::before {
-	position: absolute;
-	content: "";
-	width: 100px;
-	top: 7px;
-	left: 210px;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.separator::after {
-	position: absolute;
-	content: "";
-	width: 100px;
-	top: 7px;
-	right:210px;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-
-
 @media (hover: hover) {
-	.header__logo:hover .logo__col_2 .logo__primary > span:first-child {
-		color: var(--color-text-primary);
-	}
+  /* when hover is supported */
+  .link-logo:hover .title-secondory_hover {
+   color: var(--color-text-primary);
+  }
 
-	.button__primary:hover {
+	.button-primary_hover:hover {
+		color: var(--color-white);
 		background-color: var(--color-active-primary);
-	}
-
-	.button__secondory:hover {
-		background-color: var(--color-active-primary);
-	}
-}
-
-
-@media (max-width: 1200px) {
-	.registration-top__button-col_2 {
-		flex: 1 1 100%
-	}
-}
-
-@media (max-width: 768px) {
-	.body__col_2 {
-		flex: 1 1 100%;
 	}
 }
