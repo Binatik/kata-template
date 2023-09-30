@@ -22,6 +22,14 @@
 	padding: 120px 80px;
 }
 
+.page__OAuth {
+	margin-bottom: 60px;
+}
+
+.page__line {
+  margin-bottom: 60px;
+}
+
 .OAuth__title {
   margin-bottom: 20px;
 }
@@ -29,7 +37,6 @@
 .OAuth__description {
   margin-bottom: 60px;
 }
-
 
 .OAuth__row {
   display: flex;
