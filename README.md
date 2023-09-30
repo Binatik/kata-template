@@ -1,7 +1,5 @@
 # Kata-Template
 
----
-
 <img width="1162" alt="image" src="https://github.com/Binatik/images/assets/47430210/869fcd11-a156-410b-8b51-82d7cbaf0a95">
 
 ## Проверить
