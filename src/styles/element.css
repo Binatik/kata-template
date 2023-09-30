@@ -1,8 +1,3 @@
-.wrapper__row {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .body-row__left {
 	min-height: 100vh;
 	background: url('../assets/bg.jpg');
@@ -53,20 +48,35 @@
   height: auto;
 }
 
+.registration__container {
+	margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.registration__title {
+  margin-bottom: 15px;
+}
+
+.registration__description {
+  margin-bottom: 60px;
+}
+
+.registration__row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 40px;
+  margin-bottom: 60px;
+}
+
 @media (max-width: 1199px) {
 	.page__container {
     padding: 20px;
   }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 992px) {
 	.OAuth__button_col_2 {
     flex: 1 1 100%
   }
-}
-
-@media (max-width: 768px) {
-	.body__col_2 {
-		flex: 1 1 100%;
-	}
 }

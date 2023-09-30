@@ -18,7 +18,7 @@
     <div class="wrapper">
         <div class="body-row wrapper__row">
             <div class="body-col body-col_2 body-row__left">
-                <div class="body-row__container">
+                <div class="body-row__container container">
                     <header class="header">
                         <a class="link-logo header__logo" href="./index.html">
                             <div class="col-2 link-logo__left">
@@ -37,8 +37,8 @@
             </div>
             <div class="body-col body-col_2 body-row__right">
                 <main class="page">
-                    <div class="page__container">
-                        <div class="OAuth">
+                    <div class="page__container container">
+                        <div class="OAuth page__OAuth">
                             <h2 class="title-primary title-primary_size_extra OAuth__title">Get iintoo it
                                 today</h2>
                             <p class="description-primary description-primary_size_md OAuth__description">
@@ -66,6 +66,48 @@
                                 </button>
                             </div>
                         </div>
+                        <form class="registration" action="#" method="get">
+                            <div class="label-row registration__container">
+                                <div class="label-container label-col label-col_2">
+                                    <input class="field-primary field-primary_size_md registration__field" type="email"
+                                        id="mail" placeholder="Email" required>
+                                    <label class="label-primary registration__label" for="mail">Email</label>
+                                </div>
+                                <div class="label-container label-col label-col_2">
+                                    <input class="field-primary field-primary_size_md registration__field" type="text"
+                                        id="phone" placeholder="Email" required>
+                                    <label class="label-primary registration__label" for="phone">Phone</label>
+                                </div>
+                            </div>
+                            <h2 class="title-primary title-primary_size_md registration__title">What type of investor
+                                are you?</h2>
+                            <p class="description-primary description-primary_size_small registration__description">
+                                Select the type of investor you are below</p>
+                            <div class="registration__row">
+                                <div class="label-container label-col label-col_4">
+                                    <input class="radio-primary" type="radio" id="individual" name="type"
+                                        value="individual">
+                                    <label class="label-radio" for="individual">individual</label>
+                                </div>
+                                <div class="label-container label-col label-col_4">
+                                    <input class="radio-primary" type="radio" id="business" name="type"
+                                        value="business">
+                                    <label class="label-radio" for="business">Business</label>
+                                </div>
+                                <div class="label-container label-col label-col_4">
+                                    <input class="radio-primary" type="radio" id="ira" name="type"
+                                        value="ira">
+                                    <label class="label-radio" for="ira">IRA</label>
+                                </div>
+                                <div class="label-container label-col label-col_4">
+                                    <input class="radio-primary" type="radio" id="trust" name="type"
+                                        value="trust">
+                                    <label class="label-radio" for="trust">Trust</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="button-secondory button-primary_hover button-secondory_size_big">Create Account</button>
+                        </form>
                     </div>
                 </main>
                 <footer></footer>
