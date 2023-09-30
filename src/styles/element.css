@@ -27,22 +27,22 @@
 	padding: 120px 80px;
 }
 
-.registation__title {
+.OAuth__title {
   margin-bottom: 20px;
 }
 
-.registation__description {
+.OAuth__description {
   margin-bottom: 60px;
 }
 
 
-.registation__row {
+.OAuth__row {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.registation__button_col_2 {
+.OAuth__button_col_2 {
   flex: 1 1 calc(50% - 30px)
 }
 
@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 968px) {
-	.registation__button_col_2 {
+	.OAuth__button_col_2 {
     flex: 1 1 100%
   }
 }
