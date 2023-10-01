@@ -41,10 +41,10 @@ button:focus-visible {
 	content: attr(data-tooltip);
 	position: absolute;
 	left: 0;
-	top: 55px;
+	top: 60px;
 	padding: 15px;
-	font-size: 18px;
-	width: 320px;
+	font-size: 16px;
+	width: 300px;
 	height: auto;
 	visibility: hidden;
 	z-index: -1;
@@ -55,7 +55,7 @@ button:focus-visible {
 
 .tooltip:hover::before {
 	visibility: visible;
-	z-index: 10;
+	z-index: 1;
 	opacity: 1;
 }
 
@@ -70,11 +70,11 @@ button:focus-visible {
 }
 
 .body-row {
-  display: flex;
+	display: flex;
 }
 
 .body-col_2 {
-  flex: 1 1 50%
+	flex: 1 1 50%
 }
 
 .header {
@@ -82,6 +82,7 @@ button:focus-visible {
 }
 
 .link-logo {
+	text-decoration: none;
 	display: inline-flex;
 	gap: 15px;
 	align-items: center;
@@ -110,29 +111,31 @@ button:focus-visible {
 }
 
 .line-container {
-  position: relative;
-  width: 50%;
+	position: relative;
+	width: 50%;
 	transform: translate(50%);
-  height: 1px;
-  background-color: var(--color-white-200);
+	height: 1px;
+	background-color: var(--color-white-200);
 }
+
 .line-primary {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 2px;
-  background-color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 2px;
+	background-color: white;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
 }
+
 .line-primary_text {
-  position: absolute;
+	position: absolute;
 	font-weight: 500;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--color-white);
-  color: var(--color-text-primary);
-  padding: 5px 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--color-white);
+	color: var(--color-text-primary);
+	padding: 5px 10px;
 }
 
 .title-primary {
@@ -173,6 +176,10 @@ button:focus-visible {
 	padding: 10px 20px;
 }
 
+.button-primary_size_md>span {
+	font-weight: 400;
+}
+
 .button-secondory {
 	border: 2px;
 	color: var(--color-white);
@@ -191,14 +198,10 @@ button:focus-visible {
 	gap: 10px;
 }
 
-.label-container {
-	position: relative;
-}
-
 .label-row {
-  display: flex;
+	display: flex;
 	gap: 30px;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .label-col_2 {
@@ -222,12 +225,12 @@ button:focus-visible {
 	border: 1px solid var(--color-white-400);
 }
 
-.field-primary:not(:focus):not(:placeholder-shown) + .label-primary {
-  font-size: 0;
+.field-primary:not(:focus):not(:placeholder-shown)+.label-primary {
+	font-size: 0;
 	transform: translate(8px, -15px);
 }
 
-.field-primary:focus + .label-primary {
+.field-primary:focus+.label-primary {
 	transform: translate(8px, -35px);
 }
 
@@ -240,23 +243,27 @@ button:focus-visible {
 	padding: 30px 8px 10px 8px;
 }
 
-.radio-primary {
-	position: absolute;
-    z-index: -1;
-    opacity: 0;
+.label-radio_size_md {
+	font-weight: 500;
 }
 
-.radio-primary + .label-radio {
+.radio-primary {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.radio-primary+.label-radio {
 	display: inline-flex;
 	align-items: center;
 	user-select: none;
 }
 
-.radio-primary + .label-radio::before {
+.radio-primary+.label-radio::before {
 	content: '';
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 	flex-shrink: 0;
 	flex-grow: 0;
 	border: 1px solid #adb5bd;
@@ -264,18 +271,26 @@ button:focus-visible {
 	margin-right: 0.5em;
 	background-repeat: no-repeat;
 	background-position: center center;
-	transform: translate(50% -50%);
 }
 
-.radio-primary:checked + .label-radio::before {
+.radio-primary:checked+.label-radio::before {
 	transition: 0.2s all;
 	border-color: #0b76ef;
 	background-color: #0b76ef;
 	background-image: url("../assets/svg/clicle-radio.svg");
 }
 
+.checkbox-primary {
+	cursor: pointer;
+	color: var(--color-white-400);
+}
+
 .label-col_4 {
 	flex: 1 1 calc(25% - 40px);
+}
+
+.link-inline {
+	color: var(--color-active-primary);
 }
 
 .footer {
@@ -288,9 +303,9 @@ button:focus-visible {
 }
 
 @media (hover: hover) {
-  .link-logo:hover .title-secondory_hover {
-   color: var(--color-text-primary);
-  }
+	.link-logo:hover .title-secondory_hover {
+		color: var(--color-text-primary);
+	}
 
 	.button-primary_hover:hover {
 		color: var(--color-white);
@@ -304,7 +319,7 @@ button:focus-visible {
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 772px) {
 	.body-row {
 		flex-direction: column;
 	}

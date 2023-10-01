@@ -60,6 +60,10 @@
   margin-bottom: 70px;
 }
 
+.registration__field {
+  position: relative;
+}
+
 .registration__title {
   margin-bottom: 15px;
 }
@@ -69,6 +73,7 @@
 }
 
 .registration__row {
+  position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -85,6 +90,10 @@
 .registration__checked {
   margin-top: 160px;
   margin-bottom: 40px;
+}
+
+.registration__link {
+  text-decoration: underline;
 }
 
 @media (max-width: 1199px) {
