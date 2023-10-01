@@ -76,6 +76,17 @@
   margin-bottom: 60px;
 }
 
+.registration__label_row {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.registration__checked {
+  margin-top: 160px;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 1199px) {
 	.page__container {
     padding: 20px;
