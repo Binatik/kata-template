@@ -1,10 +1,45 @@
+/* Классы больших блоков которые могут являться например целым списком пользователей. */
+
 .header {
-	min-height: 100vh;
-	background: url('../../assets/bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+  min-height: 100vh;
+  background: url("../../assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  padding: 30px 38px;
 }
 
 .header__logo {
-  padding: 30px 38px;
+  background-color: transparent;
+}
+
+.authorization__container {
+  padding: 120px 80px;
+}
+
+.authorization__title {
+  margin-bottom: 20px;
+}
+
+.authorization__paragraph {
+  margin-bottom: 60px;
+}
+
+.authorization__button-link-container {
+  display: flex;
+  gap: 20px 40px;
+}
+
+@media (max-width: 1199px) {
+  .authorization__container {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .authorization__button-link-container {
+    flex-wrap: wrap;
+  }
 }

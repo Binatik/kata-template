@@ -1,3 +1,5 @@
+/* Маленькие ui компоненты вроде кнопки, ссылки, текста */
+
 .company-logo {
   display: inline-flex;
   align-items: center;
@@ -55,9 +57,94 @@
 
 /* ============UI================ */
 
+.title {
+}
+
+.title--mode--primary {
+  color: var(--color-text-primary);
+}
+
+.title--size--extra {
+  font-size: clamp(2rem, 2.8vw, 2.4rem);
+}
+
+.title--weight--md {
+  font-weight: 500;
+}
+
+/* ============UI================ */
+
+.paragraph {
+}
+
+.paragraph--mode--primary {
+  color: var(--color-white-600);
+}
+
+.paragraph--size--extra {
+  font-size: clamp(1rem, 2.8vw, 1.3rem);
+}
+
+.paragraph--weight--md {
+  font-weight: 400;
+}
+
+.button-link {
+  cursor: pointer;
+}
+
+.button-link--mode--primary {
+  flex: 1 1 50%;
+  align-items: center;
+  background-color: var(--color-button-primary);
+  transition: 0.2s background-color;
+}
+
+.button-link--space--md {
+  gap: 0 10px;
+}
+
+.button-link--wide--true {
+  display: flex;
+}
+
+.button-link--wide--false {
+  display: inline-flex;
+}
+
+.button-link--size--md {
+  padding: 14px 20px;
+}
+
+.button-link__icon--mode--primary {
+  flex-shrink: 0;
+  fill: var(--color-white);
+}
+
+.button-link__icon--size--md {
+  width: 25px;
+  height: 25px;
+}
+
+.button-link__text--weight--md {
+  font-weight: 400;
+}
+
+.button-link__text--mode--primary {
+  color: var(--color-white);
+}
+
+.button-link__text--size--md {
+  font-size: 1rem;
+}
+
 @media (hover: hover) {
   /* when hover is supported */
   .company-logo:hover .company-logo__right-container .company-logo__right--mode--primary {
     color: var(--color-text-primary);
+  }
+
+  .button-link--mode--primary:hover {
+    background-color: var(--color-active-primary);
   }
 }
