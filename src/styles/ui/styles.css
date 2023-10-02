@@ -1,5 +1,5 @@
 .company-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
 }
@@ -22,6 +22,7 @@
 
 .company-logo__right--mode--primary {
   color: var(--color-white);
+  transition: 0.2s color;
 }
 
 .company-logo__right--size--md {
@@ -50,4 +51,13 @@
 
 .company-logo__description--size--md {
   font-size: 0.8rem;
+}
+
+/* ============UI================ */
+
+@media (hover: hover) {
+  /* when hover is supported */
+  .company-logo:hover .company-logo__right-container .company-logo__right--mode--primary {
+    color: var(--color-text-primary);
+  }
 }
