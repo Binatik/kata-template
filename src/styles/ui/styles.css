@@ -1,0 +1,53 @@
+.company-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.company-logo--space--small {
+  gap: 0 15px;
+}
+
+.company-logo__left-container {
+  margin-top: 5px;
+}
+
+.company-logo__right {
+  letter-spacing: -4px;
+}
+
+.company-logo__left {
+  letter-spacing: -7px;
+}
+
+.company-logo__right--mode--primary {
+  color: var(--color-white);
+}
+
+.company-logo__right--size--md {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+}
+
+.company-logo__right--weight--md {
+  font-weight: 400;
+}
+
+.company-logo__left--mode--primary {
+  color: var(--color-white);
+}
+
+.company-logo__left--size--md {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+}
+
+.company-logo__left--weight--md {
+  font-weight: 400;
+}
+
+.company-logo__description--mode--primary {
+  color: var(--color-white);
+}
+
+.company-logo__description--size--md {
+  font-size: 0.8rem;
+}

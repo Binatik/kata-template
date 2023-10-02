@@ -1,0 +1,10 @@
+.header {
+	min-height: 100vh;
+	background: url('../../assets/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__logo {
+  padding: 30px 38px;
+}

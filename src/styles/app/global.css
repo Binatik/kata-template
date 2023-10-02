@@ -1,0 +1,53 @@
+:root {
+	--color-text-primary: #2A4A5C;
+	--color-button-primary: #255A9B;
+	--color-button-secondory: #0076B6;
+	--color-active-primary: #3698FB;
+	--color-white-800: #7B8A92;
+	--color-white-600: #96A5B1;
+	--color-white-400: #AFAFAF;
+	--color-white-200: #EEEEEE;
+	--color-white: #ffffff;
+
+	--container-extra: calc(1200px + 40px);
+	/* 40 px padding */
+}
+
+*,
+*:before,
+*:after {
+	font-weight: 300;
+	font-family: 'Barlow', sans-serif;
+	line-height: 1.1;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/* Эти стили не относятся к категории бэм блоков но вероятно ими являются, однако это глобальные, переиспользуемые классы. */
+
+.row {
+	display: flex;
+}
+
+.col-2 {
+	flex: 1 1 50%
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: var(--container-extra);
+	margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+	.row {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
