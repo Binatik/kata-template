@@ -47,6 +47,10 @@
   margin-bottom: 20px;
 }
 
+.registration__middle {
+  margin-bottom: 60px;
+}
+
 .page {
   flex: 1 1 50%
 }
@@ -65,4 +69,10 @@
   .authorization__button-link-container {
     flex-wrap: wrap;
   }
+}
+
+@media (max-width: 576px) {
+	.header {
+		min-height: 250px;
+	}
 }

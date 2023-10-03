@@ -81,7 +81,7 @@
 
 .paragraph--size--extra {
   font-weight: 500;
-  font-size: clamp(1rem, 2.8vw, 1.3rem);
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
 }
 
 .paragraph--size--md {
@@ -225,6 +225,29 @@
 .contact__field--mode--primary:focus {
 	border-left: 1px solid var(--color-active-primary);
 }
+.buttion--mode--submit {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--color-active-primary);
+  transition: 0.2s background-color, 0.2s border;
+}
+
+.button--size--extra {
+  padding: 10px 80px;
+}
+
+.button__text {
+  transition: 0.2s color;
+}
+
+.button__text--mode--primary {
+  color: var(--color-white);
+}
+
+.button__text--size--md {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
 
 
 @media (hover: hover) {
@@ -235,5 +258,16 @@
 
   .button-link--mode--primary:hover {
     background-color: var(--color-active-primary);
+  }
+
+  .buttion--mode--submit:hover {
+    border-radius: 4px;
+    border: 1px solid var(--color-white-200);
+    background-color: transparent;
+    color: var(--color-text-primary)
+  }
+
+  .buttion--mode--submit:hover .button__text {
+    color: var(--color-text-primary)
   }
 }
