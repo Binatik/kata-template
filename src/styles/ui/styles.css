@@ -109,7 +109,7 @@
 }
 
 .button-link--wide {
-  flex: 1 1 50%
+  flex: 1 1 50%;
 }
 
 .button-link--size--md {
@@ -138,8 +138,8 @@
 /* ============UI================ */
 
 .line {
-	position: relative;
-	transform: translate(50%);
+  position: relative;
+  transform: translate(50%);
 }
 
 .line--mode--primary {
@@ -152,10 +152,10 @@
 }
 
 .line__polygon {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
 }
 
 .line__polygon--mode--primary {
@@ -167,10 +167,10 @@
 }
 
 .line__content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .line__content--mode--primary {
@@ -195,36 +195,37 @@
 }
 
 .contact__field--mode--primary {
-	padding: 30px 8px 10px 8px;
-	color: var(--color-text-primary);
-	border: 1px solid var(--color-white-200);
+  padding: 30px 8px 10px 8px;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-white-200);
 }
 
 .contact__label {
-	pointer-events: none;
-	cursor: default;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	transform: translate(8px, -50%);
+  pointer-events: none;
+  cursor: default;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(8px, -50%);
   transition: 0.3s;
 }
 
-.contact__field--mode--primary:not(:focus):not(:placeholder-shown)+.contact__label .paragraph  {
-	font-size: 0;
+.contact__field--mode--primary:not(:focus):not(:placeholder-shown) + .contact__label .paragraph {
+  font-size: 0;
 }
 
-.contact__field--mode--primary:not(:focus):not(:placeholder-shown)+.contact__label {
-	transform: translate(8px, -18px);
+.contact__field--mode--primary:not(:focus):not(:placeholder-shown) + .contact__label {
+  transform: translate(8px, -18px);
 }
 
-.contact__field--mode--primary:focus+.contact__label {
-	transform: translate(8px, -35px);
+.contact__field--mode--primary:focus + .contact__label {
+  transform: translate(8px, -35px);
 }
 
 .contact__field--mode--primary:focus {
-	border-left: 1px solid var(--color-active-primary);
+  border-left: 1px solid var(--color-active-primary);
 }
+
 .buttion--mode--submit {
   border: 1px solid transparent;
   border-radius: 4px;
@@ -249,6 +250,79 @@
   font-size: 1.1rem;
 }
 
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option__field {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio-option__label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.radio-option__label::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.radio-option__label--space--small::before {
+  margin-right: 0.5rem;
+}
+
+.radio-option__label--mode--primary::before {
+  border-radius: 50%;
+  border: 1px solid var(--color-white-200);
+  transition: 0.1s border;
+}
+
+.radio-option__label--size--md::before {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-option__label--mode--primary:hover::before {
+  border-color: var(--color-active-primary);
+  border: 5px solid var(--color-white-200);
+}
+
+.radio-option__field--mode--primary:checked+.radio-option__label::before {
+  border: 5px solid var(--color-active-primary);
+}
+
+.radio-option-info__button {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.radio-option-info--mode--info {
+  fill: var(--color-white-400);
+}
+
+.radio-option-info--size--small {
+  height: 16px;
+  width: 16px;
+}
+
+.radio-option__paragraph--size-md {
+  font-size: clamp(0.8rem, 2.8vw, 1rem);
+}
+
+.radio-option__paragraph--weight-extra {
+  font-weight: 500;
+}
+
+.link--mode--outline {
+  color: var(--color-active-primary);
+  text-decoration: underline;
+}
 
 @media (hover: hover) {
   /* when hover is supported */
@@ -264,10 +338,10 @@
     border-radius: 4px;
     border: 1px solid var(--color-white-200);
     background-color: transparent;
-    color: var(--color-text-primary)
+    color: var(--color-text-primary);
   }
 
   .buttion--mode--submit:hover .button__text {
-    color: var(--color-text-primary)
+    color: var(--color-text-primary);
   }
 }

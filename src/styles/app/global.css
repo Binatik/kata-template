@@ -41,6 +41,10 @@ body {
 	margin: 0 auto;
 }
 
+.col-4 {
+	flex: 1 1 25%
+}
+
 @media (max-width: 576px) {
 	.row {
 		flex-direction: column;

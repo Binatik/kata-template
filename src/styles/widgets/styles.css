@@ -47,8 +47,28 @@
   margin-bottom: 20px;
 }
 
+.registration__paragraph {
+  margin-bottom: 60px;
+}
+
 .registration__middle {
   margin-bottom: 60px;
+}
+
+.registration__option-container {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 10px 50px;
+}
+
+.registration__option {
+  gap: 0 10px;
+}
+
+.approval__container {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
 }
 
 .page {
@@ -67,6 +87,10 @@
 
 @media (max-width: 992px) {
   .authorization__button-link-container {
+    flex-wrap: wrap;
+  }
+
+  .registration__option-container {
     flex-wrap: wrap;
   }
 }
