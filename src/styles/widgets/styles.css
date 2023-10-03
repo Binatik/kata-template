@@ -5,6 +5,7 @@
   background: url("../../assets/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  flex: 1 1 50%
 }
 
 .header__container {
@@ -32,8 +33,30 @@
   gap: 20px 40px;
 }
 
+.registration__container {
+  padding: 60px 80px 80px 80px;
+}
+
+.registration__top {
+  display: flex;
+  gap: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.registration__title {
+  margin-bottom: 20px;
+}
+
+.page {
+  flex: 1 1 50%
+}
+
 @media (max-width: 1199px) {
   .authorization__container {
+    padding: 60px 20px;
+  }
+
+  .registration__container {
     padding: 60px 20px;
   }
 }
