@@ -31,13 +31,14 @@
   padding: 140px 80px 60px 80px;
 }
 
+.authorization__top {
+  margin-bottom: 20px;
+}
+
 .authorization__title {
   margin-bottom: 20px;
 }
 
-.authorization__paragraph {
-  margin-bottom: 60px;
-}
 
 .authorization__button-link-container {
   display: flex;
