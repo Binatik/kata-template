@@ -297,9 +297,10 @@
 
 .radio-option__field--mode--primary:checked+.radio-option__label::before {
   border: 5px solid var(--color-active-primary);
+  outline: none;
 }
 
-.radio-option__field:focus+.radio-option__label::before {
+.radio-option__field:focus-visible+.radio-option__label::before {
  outline: 1px solid var(--color-text-primary);
 }
 
