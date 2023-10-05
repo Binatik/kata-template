@@ -222,8 +222,10 @@
   transform: translate(8px, -35px);
 }
 
-.contact__field--mode--primary:focus {
-  border-left: 1px solid var(--color-active-primary);
+/* ============UI================ */
+
+.button:focus {
+    outline: 1px solid var(--color-text-primary);
 }
 
 .buttion--mode--submit {
@@ -295,6 +297,10 @@
 
 .radio-option__field--mode--primary:checked+.radio-option__label::before {
   border: 5px solid var(--color-active-primary);
+}
+
+.radio-option__field:focus+.radio-option__label::before {
+ outline: 1px solid var(--color-text-primary);
 }
 
 .radio-option-info__button {
