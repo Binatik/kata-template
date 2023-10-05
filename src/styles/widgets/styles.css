@@ -16,7 +16,18 @@
   background-color: transparent;
 }
 
+.page__col {
+  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10vh;
+}
+
 .authorization__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
   padding: 140px 80px 60px 80px;
 }
 
@@ -99,4 +110,10 @@
 	.header {
 		min-height: 250px;
 	}
+}
+
+@media (max-height: 1000px) {
+  .page__col {
+    gap: 5vh;
+  }
 }
