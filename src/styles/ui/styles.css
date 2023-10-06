@@ -57,12 +57,12 @@
 
 .title--size--extra {
   font-weight: 500;
-  font-size: clamp(2rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.4rem);
 }
 
 .title--size--md {
   font-weight: 500;
-  font-size: clamp(1.4rem, 2.8vw, 1.6rem);
+  font-size: clamp(1.1rem, 2.8vw, 1.6rem);
 }
 
 /* ============UI================ */
@@ -81,12 +81,12 @@
 
 .paragraph--size--extra {
   font-weight: 500;
-  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  font-size: clamp(0.8rem, 2.8vw, 1.2rem);
 }
 
 .paragraph--size--md {
   font-weight: 400;
-  font-size: clamp(0.8rem, 2.8vw, 1rem);
+  font-size: clamp(0.5rem, 2.8vw, 1rem);
 }
 
 /* ============UI================ */
@@ -132,7 +132,7 @@
 
 .button-link__text--size--md {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 4vw, 1rem);
 }
 
 /* ============UI================ */
@@ -361,5 +361,11 @@
   .radio-option__label--mode--primary:hover::before {
     border-color: var(--color-active-primary);
     border: 5px solid var(--color-white-200);
+  }
+}
+
+@media (max-width:776px) {
+  .button-link--size--md {
+    padding: 8px 20px;
   }
 }
