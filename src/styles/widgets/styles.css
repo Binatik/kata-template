@@ -25,11 +25,12 @@
 
 .authorization__container {
   margin-top: 10vh;
+  gap: 5vh;
   padding: 10px 80px;
 }
 
 .authorization__top {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .authorization__title {
