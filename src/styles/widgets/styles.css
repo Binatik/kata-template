@@ -20,12 +20,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  gap: 8vh;
 }
 
 .authorization__container {
-  display: flex;
-  flex-direction: column;
-  padding: 140px 80px 60px 80px;
+  margin-top: 10vh;
+  padding: 10px 80px;
 }
 
 .authorization__top {
@@ -43,7 +43,7 @@
 }
 
 .registration__container {
-  padding: 60px 80px 80px 80px;
+  padding: 10px 80px;
 }
 
 .registration__top {
@@ -86,11 +86,11 @@
 
 @media (max-width: 1199px) {
   .authorization__container {
-    padding: 60px 20px;
+    padding: 10px 20px;
   }
 
   .registration__container {
-    padding: 60px 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -109,13 +109,9 @@
 		min-height: 25vh;
 	}
 
-  .authorization__container {
-    padding: 30px 20px;
-  }
-
-  .registration__container  {
-    padding: 30px 20px;
-  }
+  .page__col {
+    gap: 5vh;
+  } 
 }
 
 @media (max-height: 1000px) {
