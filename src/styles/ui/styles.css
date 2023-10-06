@@ -240,6 +240,7 @@
 }
 
 .button--size--extra {
+  max-width: 350px;
   padding: 10px 80px;
 }
 
@@ -367,5 +368,11 @@
 @media (max-width:776px) {
   .button-link--size--md {
     padding: 8px 20px;
+  }
+}
+
+@media (max-width:576px) {
+  .button--size--extra {
+    max-width: 100%;
   }
 }
