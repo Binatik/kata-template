@@ -5,7 +5,7 @@
   background: url("../../assets/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  flex: 1 1 50%
+  flex: 1 1 50%;
 }
 
 .header__container {
@@ -17,9 +17,9 @@
 }
 
 .page__col {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 8vh;
 }
 
@@ -35,7 +35,6 @@
 .authorization__title {
   margin-bottom: 20px;
 }
-
 
 .authorization__button-link-container {
   display: flex;
@@ -81,7 +80,7 @@
 }
 
 .page {
-  flex: 1 1 50%
+  flex: 1 1 50%;
 }
 
 @media (max-width: 1199px) {
@@ -105,16 +104,10 @@
 }
 
 @media (max-width: 576px) {
-	.header {
-		min-height: 25vh;
-	}
-
+  .header {
+    min-height: 20vh;
+  }
   .page__col {
     gap: 5vh;
-  } 
-}
-
-@media (max-height: 1000px) {
-  .page__col {
   }
 }
